@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <base href="{{ .Site.BaseUrl }}">
+    <title> {{ .Title }} : {{ .Site.BaseUrl }} </title>
+    <link rel="canonical" href="{{ .Permalink }}">
+    <link rel="stylesheet" type="text/css" href="bower/normalize.css/normalize.css"></link>
+    {{ if .RSSlink }}<link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Title }}" />{{ end }}
+</head>

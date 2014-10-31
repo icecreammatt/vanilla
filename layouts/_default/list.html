@@ -1,0 +1,11 @@
+{{ partial "header.html" . }}
+<h3>LIST HEADER</h3>
+<ul>
+{{ range .Data.Pages.ByDate.Reverse }}
+    <li>
+        <!--{{ .Render "summary" }}-->
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+{{ end }}
+</ul>
+{{ partial "footer.html" }}

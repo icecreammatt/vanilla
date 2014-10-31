@@ -1,0 +1,17 @@
+{{ partial "header.html" . }}
+<h1>Home Page</h1>
+<div class="posts">
+    <ul>
+    {{ range where .Data.Pages "Section" "post" }}
+    <li>
+        <h1>
+            <a href="{{ .Permalink }}"> {{ .Title }}</a>
+        </h1>
+    </li>
+    {{ end }}
+    </ul>
+</div>
+<a href="archive/">archive</a>
+
+{{ partial "footer.html" . }}
+</body>
