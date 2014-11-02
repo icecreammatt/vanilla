@@ -1,6 +1,16 @@
 $first-color: #333
 $second-color: #3f3f3f
 $third-color: #efefef
+$fourth-color: #fff
+
+header
+  background-color: $fourth-color
 
 body
   background-color: $third-color
+ 
+footer
+  background-color: $fourth-color
+
+footer img
+  border-radius: 50%

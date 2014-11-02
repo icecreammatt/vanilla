@@ -1,5 +1,7 @@
 {{ partial "header.html" . }}
+
 <img src="http://placehold.it/500x100" />
+
 <div class="posts">
     <ul>
     {{ range where .Data.Pages "Section" "" }}
@@ -15,4 +17,3 @@
 <a href="archive/">archive</a>
 
 {{ partial "footer.html" . }}
-</body>
