@@ -2,9 +2,11 @@
   <div>
     <hr />
     <p>
-    &copy; 2014 FIRST LAST.
+    &copy; 2014 {{ .Site.Params.FullName }}
     </p>
   </div>
 </footer>
+{{ partial "ga.html" . }}
+{{ partial "js.html" . }}
 </body>
 </html>
