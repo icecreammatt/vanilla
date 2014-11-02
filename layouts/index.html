@@ -7,7 +7,7 @@
         <h1>
             <a href="{{ .Permalink }}"> {{ .Title }}</a>
         </h1>
-        <span>{{ .Date }}</span>
+        <span>{{ .Date.Format "Jan 2 2006" }}</span>
     </li>
     {{ end }}
     </ul>
