@@ -1,0 +1,6 @@
+$first-color: #333
+$second-color: #3f3f3f
+$third-color: #efefef
+
+body
+  background-color: $third-color
