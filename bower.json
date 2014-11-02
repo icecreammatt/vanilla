@@ -1,0 +1,25 @@
+{
+  "name": "vanilla",
+  "version": "0.0.1",
+  "homepage": "https://github.com/icecreammatt/vanilla",
+  "authors": [
+    "Matt Carrier <icecreammatt@gmail.com>"
+  ],
+  "description": "Blog theme for Hugo",
+  "moduleType": [
+    "es6"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "static/bower/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "~3.0.2",
+  }
+}
