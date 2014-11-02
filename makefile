@@ -1,12 +1,5 @@
 GCSS_SOURCE=src/gcss/*.gcss
-ALL_GCSS_TARGET=static/css/all.gcss
 CSS_TARGET=static/css/all.css
-
-#$(CSS_TARGET): $(ALL_GCSS_TARGET)
-#	gcss $^
-
-#$(ALL_GCSS_TARGET): $(GCSS_SOURCE)
-#	cat $^ >$@
 
 css: $(CSS_TARGET)
 
