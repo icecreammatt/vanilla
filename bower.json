@@ -21,5 +21,6 @@
   ],
   "dependencies": {
     "normalize.css": "~3.0.2",
+    "bootstrap": "~3.3.0"
   }
 }
