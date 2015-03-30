@@ -3,4 +3,5 @@ a
   text-decoration: none
 
 a:hover
-  color: #fff
+  color: black
+  text-decoration: none

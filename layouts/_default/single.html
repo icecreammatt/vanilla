@@ -1,17 +1,26 @@
 {{ partial "header.html" . }}
 
+<img src="{{ .Params.image_name }}" width="900px" height="200px"/>
+<h1>{{ .Params.image_name }}</h1>
 <i>SINGLE POST HEADER</i>
 <article>
     <h1>{{ .Title }} - <i>{{ .Date.Format "Jan 2, 2006" }}</i></h1>
     <p>{{ .Content }}</p>
 </article>
 
+<img src="{{ .Params.image_name }}" />
+{{ if .Params.next_post_path }}
+<a href="{{ .Params.next_post_path }}">
+  <img src="{{ .Params.next_image }}" />
+</a>
+{{ end }}
+
 {{ if .Next }}
-<a href={{ .Next.Permalink }}>Previous</a>
+<!-- <a href={{ .Next.Permalink }}>Next</a> -->
 {{ end }}
 
 {{ if .Prev }}
-<a href={{ .Prev.Permalink }}>Next</a>
+<!-- <a href={{ .Prev.Permalink }}>Previous</a> -->
 {{ end }}
 
 {{ partial "footer.html" . }}

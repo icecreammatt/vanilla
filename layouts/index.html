@@ -1,19 +1,22 @@
 {{ partial "header.html" . }}
-
+<div class="container-fluid">
 <img src="http://placehold.it/500x100" />
-
-<div class="posts">
-    <ul>
+<div class="home row">
+  <ul>
     {{ range where .Data.Pages "Section" "" }}
     <li>
-        <h1>
-            <a href="{{ .Permalink }}"> {{ .Title }}</a>
-        </h1>
-        <span>{{ .Date.Format "Jan 2 2006" }}</span>
+      <h3>
+        <a href="{{ .Permalink }}"> {{ .Title }}</a>
+      </h3>
+      <span>{{ .Date.Format "Jan 2 2006" }}</span>
     </li>
     {{ end }}
-    </ul>
+    <li>
+      <h3>
+        <a href="archive/">archive</a>
+      </h3>
+    </li>
+  </ul>
 </div>
-<a href="archive/">archive</a>
-
+</div>
 {{ partial "footer.html" . }}

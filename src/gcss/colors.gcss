@@ -1,16 +1,46 @@
-$first-color: #333
-$second-color: #3f3f3f
-$third-color: #efefef
+$first-color: #4A4A4A
+$second-color: rgb(51, 51, 51)
+$third-color: #dedede
 $fourth-color: #fff
 
 header
   background-color: $fourth-color
 
 body
-  background-color: $third-color
+  background-color: $fourth-color
  
 footer
-  background-color: $fourth-color
+  background-color: $third-color
+  padding-top: 100px
+
+footer .copyright
+  color: $first-color
 
 footer img
   border-radius: 50%
+
+footer li
+  list-style: none
+
+span.fa
+  display: inline-block
+  border-radius: 50%
+  font-size: 20px
+  height: 32px
+  width: 32px
+  line-height: 32px
+  text-align: center
+  background: $third-color
+
+footer [class*="fa fa-"]
+  background-color: #333
+  border-radius: 30px
+  color: #fff
+  display: inline-block
+  height: 30px
+  line-height: 30px
+  margin: auto 3px
+  width: 30px
+  font-size: 15px
+  text-align: center
+

@@ -1,11 +1,10 @@
 {{ partial "header.html" . }}
 <h3>LIST HEADER</h3>
 <ul>
-{{ range .Data.Pages.ByDate.Reverse }}
-    <li>
+{{ range .Data.Pages.ByDate }}
         <!--{{ .Render "summary" }}-->
         <a href="{{ .Permalink }}">{{ .Title }} - <small>{{ .Date.Format "Jan 6, 2006" }}</small></a>
-    </li>
+        <img src="{{ .Params.image_name }}" width="100" />
 {{ end }}
 </ul>
 {{ partial "footer.html" }}
